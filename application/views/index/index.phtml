@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+<body>
+<h1><a class="pjax" href="<?= \Helper\url('index/show') ?>">hello world!</a></h1>
+<div id="container">
+    <?php
+    echo $content, " I am ", $name;
+    ?>
+</div>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="<?= \Helper\asset('bower_components/pjax/src/jquery.pjax.js') ?>"></script>
+<script !src="">
+    //    $('a').click(function () {
+    //        alert('ad');
+    //
+    //    });
+
+    $.pjax({
+        selector: '.pjax',
+        container: '#container', //内容替换的容器
+        show: 'fade',  //展现的动画，支持默认和fade, 可以自定义动画方式，这里为自定义的function即可。
+        cache: false,  //是否使用缓存
+        storage: false,  //是否使用本地存储
+        titleSuffix: '#', //标题后缀
+        callback: function () {
+        }
+    })
+    $.pjax.reload('#container');
+
+
+</script>
+</body>
+</html>
+
