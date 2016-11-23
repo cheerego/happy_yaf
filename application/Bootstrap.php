@@ -40,14 +40,14 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
     public function _initLoader()
     {
         Yaf_Loader::import(APPLICATION_PATH . "/vendor/autoload.php");
-         Yaf_Loader::getInstance()->autoload('Helper');
+        Yaf_Loader::getInstance()->autoload('Helper');
     }
 
     public function _initDatabaseEloquent()
     {
 
         $dbconfig = Yaf_Registry::get("config")->mysql->toArray();
-      
+
 //        $capsule = new Illuminate\Database\Capsule\Manager();
 //        $capsule->addConnection($dbconfig);
 //        $capsule->bootEloquent();
