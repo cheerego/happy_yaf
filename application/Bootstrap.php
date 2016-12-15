@@ -32,7 +32,14 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         Yaf\Loader::getInstance()->autoload('helper');
     }
 
+    public function _initWhoops(Yaf\Dispatcher $dispatcher){
+        if (Yaf\Registry::get('config')->whoops->handler) {
+            $whoops = new \Whoops\Run;
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->register();
+        }
 
+    }
     public function _initPlugin(Yaf\Dispatcher $dispatcher)
     {
         //注册一个插件

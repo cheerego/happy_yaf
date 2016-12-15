@@ -2,7 +2,10 @@
     "require": {
         "nesbot/carbon": "*",
         "illuminate/database": "*",
-        "twig/twig": "*"
+        "twig/twig": "*",
+        "filp/whoops": "^2.1",
+        "symfony/var-dumper": "^3.2",
+        "whoops/soap": "^1.0"
     },
     "autoload": {
         "psr-4": {

@@ -16,7 +16,7 @@ class IndexController extends Yaf\Controller_Abstract
      * 对于如下的例子, 当访问http://yourhost/Sample/index/index/index/name/placeless 的时候, 你就会发现不同
      */
     public function indexAction($name = "Stranger")
-    {
+    {asd
         $this->getView()->assign("haha", 'haha');
         $this->getView()->display('index/index',['content'=>'Hello World!']);
         return false;
