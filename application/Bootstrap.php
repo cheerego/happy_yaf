@@ -57,11 +57,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
     }
 
 
-//    protected function _initTwig(Yaf\Dispatcher $dispatcher)
-//    {
-//        $twig = new Twig(APPLICATION_PATH . '/application/views', Yaf\Registry::get('config')->twig->toArray());
-//        $dispatcher->setView($twig);
-//    }
     public function _initView(Yaf\Dispatcher $dispatcher)
     {
         //在这里注册自己的view控制器，例如smarty,firekylin
@@ -76,7 +71,7 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
 //        $template = $twig->load($view);
 //        $template->display($this->assign);
 
-        $twig = new Wig(APPLICATION_PATH . '/application/views', Yaf\Registry::get('config')->twig->toArray());
+        $twig = new Twig(APPLICATION_PATH . '/application/views', Yaf\Registry::get('config')->twig->toArray());
         $dispatcher->setView($twig);
     }
 

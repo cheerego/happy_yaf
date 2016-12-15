@@ -18,11 +18,11 @@ class IndexController extends Yaf\Controller_Abstract
     public function indexAction($name = "Stranger")
     {
 //        var_dump(User::find(1));
-        $this->getView()->assign("content",(new  SampleModel())->selectSample());
-        $this->getView()->assign("name", $name);
-
+//        $this->getView()->assign("content",(new  SampleModel())->selectSample());
+//        $this->getView()->assign("name", $name);
+        $this->getView()->display('index/index.twig',['content'=>'helloworld']);
         //4. render by Yaf, 如果这里返回FALSE, Yaf将不会调用自动视图引擎Render模板
-        return TRUE;
+        return false;
     }
 
     public function showAction()
