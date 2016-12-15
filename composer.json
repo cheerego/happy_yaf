@@ -1,6 +1,18 @@
 {
     "require": {
-        "nesbot/carbon": "^1.21",
-        "illuminate/database": "^5.2"
+        "nesbot/carbon": "*",
+        "illuminate/database": "*",
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Model\\": "application/models/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
     }
 }

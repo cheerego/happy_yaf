@@ -6,5 +6,8 @@
  * Date: 16/5/2
  * Time: 下午4:57
  */
-class User extends Illuminate\Database\Eloquent\Model{
+namespace App\Model;
+use Illuminate\Database\Eloquent\Model as Eloquent;
+class User extends Eloquent{
+
 }
