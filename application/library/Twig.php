@@ -50,16 +50,31 @@ class Twig implements Yaf\View_Interface
 //        $paths = $this->loader->getPaths();
         return $this->templateDir;
     }
-    public function render($template,  $variables = null)
+    public function render($template,  $tpl_vars = null)
     {
-        if (is_array($variables)) {
-            $this->variables = array_merge($this->variables,$this->variables);
+        if (!isset(pathinfo($template)['extension'])) {
+            $template .= '.'.Yaf\Registry::get('config')->application->view->ext;
         }
+        if (is_array($tpl_vars)) {
+            foreach ($tpl_vars as $key => $val) {
+                $this->variables[$key]=$val;
+            }
+        }
+
         return $this->twig->load($template)->display($this->variables);
     }
-    public function display($template,  $variables = null)
+    public function display($template,  $tpl_vars = null)
     {
-        echo $this->render($template, $variables);
+        echo $this->render($template, $tpl_vars);
+    }
+
+    public function clear($name=null)
+    {
+        if (empty($name)) {
+            unset($this->variables);
+        } else {
+            unset($this->variables[$name]);
+        }
     }
 
 }
