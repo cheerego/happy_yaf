@@ -34,9 +34,14 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
 
     public function _initWhoops(Yaf\Dispatcher $dispatcher){
         if (Yaf\Registry::get('config')->whoops->handler) {
-            $whoops = new \Whoops\Run;
-            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-            $whoops->register();
+
+            $run     = new Whoops\Run;
+            $handler = new \Whoops\Handler\PrettyPageHandler();
+            $run->pushHandler($handler);
+            if (Whoops\Util\Misc::isAjaxRequest()) {
+                $run->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+            }
+            $run->register();
         }
 
     }

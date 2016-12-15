@@ -3,9 +3,8 @@
         "nesbot/carbon": "*",
         "illuminate/database": "*",
         "twig/twig": "*",
-        "filp/whoops": "^2.1",
         "symfony/var-dumper": "^3.2",
-        "whoops/soap": "^1.0"
+        "filp/whoops": "^2.1"
     },
     "autoload": {
         "psr-4": {

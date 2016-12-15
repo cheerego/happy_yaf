@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8adff3126924a6d1d60efd0c5a5982ee",
-    "content-hash": "7abf0366715e7587dad4c01f92dc818d",
+    "hash": "d6dfb6137f8a96626a9409244594caf8",
+    "content-hash": "9e2be226151633829f7529e054611bad",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -677,43 +677,6 @@
                 "templating"
             ],
             "time": "2016-12-13 17:28:18"
-        },
-        {
-            "name": "whoops/soap",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/whoops-php/soap.git",
-                "reference": "3a20e2b037bc49ff7f909db2694740ceb1b1be50"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/whoops-php/soap/3a20e2b037bc49ff7f909db2694740ceb1b1be50.zip",
-                "reference": "3a20e2b037bc49ff7f909db2694740ceb1b1be50",
-                "shasum": ""
-            },
-            "require-dev": {
-                "filp/whoops": "^2.0-dev",
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Whoops\\Handler\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Markus Staab",
-                    "email": "maggus.staab@googlemail.com"
-                }
-            ],
-            "description": "Soap handler for Whoops",
-            "time": "2015-11-23 20:11:17"
         }
     ],
     "packages-dev": [],
