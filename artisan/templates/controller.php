@@ -30,12 +30,7 @@ class %s extends Yaf\Controller_Abstract
         \$this->getView()->display('index/index',['content'=>'Hello World!']);
         return false;
     }
-
-    public function showAction()
-    {
-        echo \$this->getRequest()->getRequestUri();
-        return false;
-    }
+    
 }
 
 
