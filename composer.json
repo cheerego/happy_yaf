@@ -1,15 +1,28 @@
 {
+    "name": "yaf-demo",
+    "description": "yaf generators",
+    "keywords": ["yaf generators", "yaf脚手架","yaf twig","yaf orm"],
+    "authors": [
+        {
+            "name": "cheerzz",
+            "email": "41974873@qq.com"
+        }
+    ],
     "require": {
         "nesbot/carbon": "*",
         "illuminate/database": "*",
         "twig/twig": "*",
         "symfony/var-dumper": "^3.2",
-        "filp/whoops": "^2.1"
+        "filp/whoops": "^2.1",
+        "symfony/console": "^3.2"
     },
     "autoload": {
         "psr-4": {
             "App\\Model\\": "application/models/"
-        }
+        },
+        "classmap": [
+            "artisan/"
+        ]
     },
     "repositories": {
         "packagist": {

@@ -74,7 +74,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         //在这里注册自己的view控制器，例如smarty,firekylin
 
 //        Twig_Autoloader::register();
-//
 //        $loader = new Twig_Loader_Filesystem(Yaf\Registry::get('config')->twig->view->dir);
 //        $twig = new Twig_Environment($loader, array(
 //            'cache' => Yaf\Registry::get('config')->twig->cache->dir,
