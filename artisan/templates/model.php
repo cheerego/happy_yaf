@@ -10,7 +10,7 @@ $str =  <<< TEMPLATE
 <?php
 
 /**
- * Created by Artisan.
+ * Created by Smartisan.
  * @desc: silence is gold
  */
 namespace App\Model;

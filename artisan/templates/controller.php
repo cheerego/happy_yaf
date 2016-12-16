@@ -9,6 +9,7 @@ $str =  <<< TEMPLATE
 <?php
 
 /**
+ * Create by Smartisan
  * @name %s
  * @author placeless
  * @desc 默认控制器

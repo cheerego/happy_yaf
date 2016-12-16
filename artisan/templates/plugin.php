@@ -11,7 +11,7 @@ $str =  <<< TEMPLATE
 
 <?php 
 /**
- * Create by Artisan 
+ * Create by Smartisan
  * @name %s
  * @desc Yaf定义了如下的6个Hook,插件之间的执行顺序是先进先Call
  * @see http://www.php.net/manual/en/class.yaf-plugin-abstract.php
