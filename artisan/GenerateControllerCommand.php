@@ -54,7 +54,7 @@ class GenerateControllerCommand extends Command
             throw  new Exception('Controller 参数设置错误,无法解析！' . $arg);
         }
         $moduleName = $pathinfo['dirname'];
-        $contollerName = $pathinfo['filename'];
+        $controllerName = $pathinfo['filename'];
         //创建目录结构
 //        if ($moduleName !='index') {
 //
@@ -79,13 +79,13 @@ class GenerateControllerCommand extends Command
                     mkdir($this->moduleDir);
                 } else if (!is_dir($this->moduleDir . '/' . $moduleName)) {
                     mkdir($this->moduleDir . '/' . $moduleName);
-                    mkdir($this->moduleDir . '/' . $moduleName . '/contollers');
-                } else if (!is_dir($this->moduleDir . '/' . $moduleName . '/contollers')) {
-                    mkdir($this->moduleDir . '/' . $moduleName . '/contollers');
+                    mkdir($this->moduleDir . '/' . $moduleName . '/controllers');
+                } else if (!is_dir($this->moduleDir . '/' . $moduleName . '/controllers')) {
+                    mkdir($this->moduleDir . '/' . $moduleName . '/controllers');
                 }
-                $this->outputFileName = $this->moduleDir . $moduleName . '//contollers/' . ucfirst($contollerName) . $this->fileNameSuffix . '.php';
+                $this->outputFileName = $this->moduleDir . $moduleName . '//controllers/' . ucfirst($controllerName) . $this->fileNameSuffix . '.php';
                 $template = require_once $this->templatePath;
-                $data = sprintf($template, ucfirst($contollerName) . $this->classNameSuffix,ucfirst($contollerName) . $this->classNameSuffix);
+                $data = sprintf($template, ucfirst($controllerName) . $this->classNameSuffix,ucfirst($controllerName) . $this->classNameSuffix);
                 break;
         }
 
