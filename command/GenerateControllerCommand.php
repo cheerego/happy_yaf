@@ -6,7 +6,7 @@
  * Date: 16/12/16
  * Time: 上午11:22
  */
-namespace Artisan;
+namespace Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

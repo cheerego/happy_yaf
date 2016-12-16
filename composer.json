@@ -21,7 +21,7 @@
             "App\\Model\\": "application/models/"
         },
         "classmap": [
-            "artisan/"
+            "command/"
         ]
     },
     "repositories": {
