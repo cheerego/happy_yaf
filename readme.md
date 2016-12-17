@@ -1,4 +1,5 @@
 # 安装
+> 鸟哥的[Yaf](https://github.com/laruence/yaf)
 1. 请确保机器已经安装了Yaf框架, 并且已经加载入PHP;
 2. 把项目目录Copy到Webserver的DocumentRoot目录下;
 3. 需要在php.ini里面启用如下配置，生产的代码才能正确运行：
@@ -7,7 +8,8 @@
 4. 重启Webserver;
 5. 进入项目目录执行 conposer require;
 6. 访问`http://yourhost/path_to_your_yaf/`,出现Hellow Word!, 表示运行成功,否则请查看php错误日志;
-
+# 文档
+在该工程的很多目录下都有readme.txt里面会有一些使用概述
 # 目录结构
 ```
 .
