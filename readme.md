@@ -7,7 +7,6 @@
 4. 重启Webserver;
 5. 进入项目目录执行 conposer require;
 6. 访问`http://yourhost/path_to_your_yaf/`,出现Hellow Word!, 表示运行成功,否则请查看php错误日志;
-
 # 目录结构
 ```
 .
