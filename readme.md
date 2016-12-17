@@ -56,7 +56,9 @@
 ├── composer.json
 └── composer.lock
 ```
-
+# 配置
+配置文件 `conf/application.ini`  
+如果不想使用DB可以注释掉Bootstrap.php中的_initDatabaseEloquent
 # 脚手架工具
 #### 用法
 ```
@@ -68,7 +70,7 @@ php smartisan create:plugin {PluginName}
 #### 扩充
 如果想自己添加一些脚手架Command你需要:  
 1. 在Command目录下编写一个GenerateXXXCommand.php(可以参照已经写好的例子)  
-2. 然后在smartisan.php中注册这个命令
+2. 然后在smartisan中注册这个命令
 
 # 使用依赖
 - [illuminate/database](https://packagist.org/packages/illuminate/database) 
