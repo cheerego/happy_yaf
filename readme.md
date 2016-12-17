@@ -78,3 +78,5 @@ php smartisan create:plugin {PluginName}
 - [filp/whoops](https://packagist.org/packages/filp/whoops) 
 - [symfony/console](https://packagist.org/packages/symfony/console) 
 
+#Last
+后续会增加 seeder csrf log redis migrate   
