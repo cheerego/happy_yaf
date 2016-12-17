@@ -70,9 +70,9 @@ class GenerateControllerCommand extends Command
 
         switch ($moduleName) {
             case 'index':
-                $this->outputFileName = $this->defaultDir . ucfirst($contollerName) . $this->fileNameSuffix . '.php';
+                $this->outputFileName = $this->defaultDir . ucfirst($controllerName) . $this->fileNameSuffix . '.php';
                 $template = require_once $this->templatePath;
-                $data = sprintf($template, ucfirst($contollerName) . $this->classNameSuffix,ucfirst($contollerName) . $this->classNameSuffix);
+                $data = sprintf($template, ucfirst($controllerName) . $this->classNameSuffix,ucfirst($controllerName) . $this->classNameSuffix);
                 break;
             default:
                 if (!is_dir($this->moduleDir)) {

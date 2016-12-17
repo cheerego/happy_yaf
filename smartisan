@@ -4,7 +4,7 @@ require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.
 
 define('APPLICATION_PATH', dirname(__FILE__));
 define('MODEL_PATH',APPLICATION_PATH.'/application/models');
-define('TEMPLATE_PATH',APPLICATION_PATH.'/artisan/templates');
+define('TEMPLATE_PATH',APPLICATION_PATH.'/command/templates');
 
 use Symfony\Component\Console\Application;
 use Command\GenerateModelCommand;

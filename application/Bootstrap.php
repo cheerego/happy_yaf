@@ -10,7 +10,6 @@
  */
 class Bootstrap extends Yaf\Bootstrap_Abstract
 {
-
     public function _initConfig()
     {
         //把配置保存起来
@@ -30,11 +29,11 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
          */
         Yaf\Loader::import(APPLICATION_PATH . "/vendor/autoload.php");
         Yaf\Loader::getInstance()->autoload('helper');
+        Yaf\Loader::getInstance()->registerLocalNamespace(['T']);
     }
 
     public function _initWhoops(Yaf\Dispatcher $dispatcher){
         if (Yaf\Registry::get('config')->whoops->handler) {
-
             $run     = new Whoops\Run;
             $handler = new \Whoops\Handler\PrettyPageHandler();
             $run->pushHandler($handler);
@@ -43,11 +42,15 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
             }
             $run->register();
         }
-
     }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     *  注册一个插件
+     */
     public function _initPlugin(Yaf\Dispatcher $dispatcher)
     {
-        //注册一个插件
+
         $objSamplePlugin = new SamplePlugin();
         $dispatcher->registerPlugin($objSamplePlugin);
     }
@@ -62,16 +65,22 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
 
     }
 
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * 在这里注册自己的路由协议,默认使用简单路由
+     */
     public function _initRoute(Yaf\Dispatcher $dispatcher)
     {
-        //在这里注册自己的路由协议,默认使用简单路由
+
 
     }
-
-
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * 在这里注册自己的view控制器，例如smarty,firekylin
+     */
     public function _initView(Yaf\Dispatcher $dispatcher)
     {
-        //在这里注册自己的view控制器，例如smarty,firekylin
+
 
 //        Twig_Autoloader::register();
 //        $loader = new Twig_Loader_Filesystem(Yaf\Registry::get('config')->twig->view->dir);

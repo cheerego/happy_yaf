@@ -6,7 +6,8 @@
  * Time: 下午7:53
  */
 namespace lib\a;
-class Haha{
+//按照正确的目录文件格式 yaf就可以自动加载类库
+class Example{
     function __construct()
     {
         echo 'db';

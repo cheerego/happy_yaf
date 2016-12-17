@@ -11,7 +11,7 @@ class SampleModel {
     
     public function selectSample() {
         return 'Hello World!';
-    }
+}
 
     public function insertSample($arrInfo) {
         return true;
