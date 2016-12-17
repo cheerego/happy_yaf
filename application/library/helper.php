@@ -10,3 +10,7 @@ function helper(){
     echo 'helper';
 }
 
+
+/**
+ * 获取js css 等资源  可以通过 APPLICATION_PATH 来指定
+ */

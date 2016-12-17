@@ -17,7 +17,6 @@ class IndexController extends Yaf\Controller_Abstract
      */
     public function init()
     {
-        echo "session";
     }
     /**
      * 默认动作

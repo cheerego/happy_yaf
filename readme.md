@@ -66,8 +66,8 @@ php smartisan create:model  {ModelName}
 php smartisan create:plugin {PluginName}
 ```
 #### 扩充
-如果想自己添加一些脚手架Command你需要:
-1. 在Command目录下编写一个GenerateXXXCommand.php(可以参照已经写好的例子)
+如果想自己添加一些脚手架Command你需要:  
+1. 在Command目录下编写一个GenerateXXXCommand.php(可以参照已经写好的例子)  
 2. 然后在smartisan.php中注册这个命令
 
 # 使用依赖

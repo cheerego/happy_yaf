@@ -17,11 +17,9 @@
         "symfony/console": "^3.2"
     },
     "autoload": {
-        "psr-4": {
-            "App\\Model\\": "application/models/"
-        },
+
         "classmap": [
-            "command/"
+            "command/","application/models/"
         ]
     },
     "repositories": {
