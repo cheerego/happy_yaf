@@ -55,7 +55,24 @@
 ├── readme.md
 ├── composer.json
 └── composer.lock
-
-
-
 ```
+
+# 脚手架工具
+#### 用法
+```
+php smartisan
+php smartisan create:controller {ModuleName}/{ControllerName}
+php smartisan create:model  {ModelName}
+php smartisan create:plugin {PluginName}
+```
+#### 扩充
+如果想自己添加一些脚手架Command你需要:
+1. 在Command目录下编写一个GenerateXXXCommand.php(可以参照已经写好的例子)
+2. 然后在smartisan.php中注册这个命令
+
+# 使用依赖
+- [illuminate/database](https://packagist.org/packages/illuminate/database) 
+- [twig/twig](https://packagist.org/packages/twig/twig) 
+- [filp/whoops](https://packagist.org/packages/filp/whoops) 
+- [symfony/console](https://packagist.org/packages/symfony/console) 
+
