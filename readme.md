@@ -1,4 +1,4 @@
-> 鸟哥的[Yaf](https://github.com/laruence/yaf)
+鸟哥的[Yaf](https://github.com/laruence/yaf)
 # 安装
 1. 请确保机器已经安装了Yaf框架, 并且已经加载入PHP;
 2. 把项目目录Copy到Webserver的DocumentRoot目录下;
