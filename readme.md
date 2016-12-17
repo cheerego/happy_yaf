@@ -73,7 +73,9 @@ php smartisan create:plugin {PluginName}
 如果想自己添加一些脚手架Command你需要:  
 1. 在Command目录下编写一个GenerateXXXCommand.php(可以参照已经写好的例子)  
 2. 然后在smartisan中注册这个命令
-
+# Twig
+Yaf使用其他的模板引擎需要实现Yaf\View_Interface这个Interface，然后在Bootstrap.php中注册。
+使用Twig的用例，在`application\library\Twig.php`
 # 使用依赖
 - [illuminate/database](https://packagist.org/packages/illuminate/database) 
 - [twig/twig](https://packagist.org/packages/twig/twig) 
