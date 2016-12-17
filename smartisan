@@ -17,3 +17,4 @@ $application->add(new GenerateModelCommand());
 $application->add(new GeneratePluginCommand());
 $application->add(new GenerateControllerCommand());
 $application->run();
+//
