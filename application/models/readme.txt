@@ -1,0 +1,7 @@
+模型文件放在这里
+
+这里放弃了yaf自带的加载规则，而是使用了composer的autoload
+
+使用的laravel的ORM库 illuminate/database
+
+如果想知道怎么使用,请查询laravel文档

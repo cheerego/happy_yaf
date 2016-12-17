@@ -80,17 +80,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
      */
     public function _initView(Yaf\Dispatcher $dispatcher)
     {
-
-
-//        Twig_Autoloader::register();
-//        $loader = new Twig_Loader_Filesystem(Yaf\Registry::get('config')->twig->view->dir);
-//        $twig = new Twig_Environment($loader, array(
-//            'cache' => Yaf\Registry::get('config')->twig->cache->dir,
-//            'debug'=>Yaf\Registry::get('config')->twig->debug
-//        ));
-//        $template = $twig->load($view);
-//        $template->display($this->assign);
-
         $twig = new Twig(APPLICATION_PATH . '/application/views', Yaf\Registry::get('config')->twig->toArray());
         $dispatcher->setView($twig);
     }
