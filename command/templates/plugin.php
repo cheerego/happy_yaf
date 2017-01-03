@@ -6,9 +6,6 @@
  * Time: 上午11:58
  */
 $str =  <<< TEMPLATE
-
-
-
 <?php 
 /**
  * Create by Smartisan
@@ -38,6 +35,9 @@ class %s extends Plugin_Abstract
 	{
 		
 	}
+	 /**
+     * 在preDispatch与postDispatch之间进入controller
+     */
 	public function postDispatch(Request_Abstract \$request, Response_Abstract \$response) 
 	{
 		

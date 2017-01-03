@@ -18,7 +18,6 @@ class SamplePlugin extends Yaf\Plugin_Abstract {
 
 	public function preDispatch(Yaf\Request_Abstract $request, Yaf\Response_Abstract $response) {
 	}
-
     /**
      * 在preDispatch与postDispatch之间进入controller
      */
