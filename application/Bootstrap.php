@@ -15,8 +15,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         //把配置保存起来
         $arrConfig = Yaf\Application::app()->getConfig();
         Yaf\Registry::set('config', $arrConfig);
-
-
     }
 
     public function _initLoader()
@@ -50,7 +48,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
      */
     public function _initPlugin(Yaf\Dispatcher $dispatcher)
     {
-
         $objSamplePlugin = new SamplePlugin();
         $dispatcher->registerPlugin($objSamplePlugin);
     }
@@ -62,7 +59,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         $capsule->addConnection($dbconfig);
         $capsule->bootEloquent();
         $capsule->setAsGlobal();
-
     }
 
     /**
@@ -71,7 +67,6 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
      */
     public function _initRoute(Yaf\Dispatcher $dispatcher)
     {
-
 
     }
     /**
@@ -83,6 +78,4 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         $twig = new Twig(APPLICATION_PATH . '/application/views', Yaf\Registry::get('config')->twig->toArray());
         $dispatcher->setView($twig);
     }
-
-
 }

@@ -17,7 +17,6 @@
         "symfony/console": "^3.2"
     },
     "autoload": {
-
         "classmap": [
             "command/","application/models/"
         ]
